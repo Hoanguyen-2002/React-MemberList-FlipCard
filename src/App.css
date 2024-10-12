@@ -1,0 +1,40 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+
+/*Reponsive*/
+@media screen and (max-width: 600px) {
+  .card-container {
+    flex: 1 1 100%; /* Mỗi thẻ chiếm 100% chiều rộng màn hình */
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .card-container {
+    flex: 1 1 calc(50% - 20px); /* Mỗi thẻ chiếm 50% chiều rộng màn hình */
+  }
+}
+
+/* Media Queries cho các kích thước khác nhau */
+@media screen and (max-width: 900px) {
+  .card-container {
+    flex: 1 1 calc(50% - 20px); /* Hai thẻ trong một hàng */
+  }
+}
+
+/* Điều chỉnh cho màn hình lớn hơn 901px */
+.member-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* Căn giữa với khoảng cách đều giữa các thẻ */
+  padding-left: 20px; /* Tạo khoảng cách từ lề trái */
+  padding-right: 20px; /* Tạo khoảng cách từ lề phải */
+  gap: 20px; /* Khoảng cách giữa các thẻ */
+}
+
+.card-container {
+  flex: 1 1 calc(33.333% - 40px); /* Mỗi thẻ chiếm 33.33% chiều rộng */
+  margin: 10px; /* Khoảng cách giữa các thẻ */
+}
