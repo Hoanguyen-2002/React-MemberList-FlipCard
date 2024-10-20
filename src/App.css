@@ -1,6 +1,11 @@
 .App {
-  text-align: center;
-  padding: 20px;
+  text-align: center; 
+}
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -62,7 +67,3 @@
   color: red;
   margin-top: 10px;
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
